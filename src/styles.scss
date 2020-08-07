@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+$full-height: 100vh;
+
+.full-screen-img {
+  width: 100vw;
+  height: $full-height;
+  position: absolute;
+  //   z-index: -3;
+}
+
+.full-screen {
+  position: relative;
+  width: 100vw;
+  height: $full-height;
+
+}
+
+.div-f {
+  width: 100px;
+  height: $full-height;
+  position: absolute;
+  background-image: linear-gradient(transparent, transparent);
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease-out;
+
+  & span {
+    color: #ffffff87;
+    transition: all .2s ease-in
+  }
+
+  &:hover {
+    width: 200px;
+
+    & span {
+      color: #fff;
+      transform: scale(1.5);
+    }
+  }
+
+  &-left {
+    left: 0;
+
+    &:hover {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent);
+    }
+
+  }
+
+  &-right {
+    right: 0;
+
+    &:hover {
+      background-image: linear-gradient(to left, rgba(0, 0, 0, .5), transparent);
+    }
+  }
+
+
+  &-center {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    right: 50%;
+    background-color: green;
+    transform: translate(50%, 20%);
+  }
+
+}
+
+// custom styles
