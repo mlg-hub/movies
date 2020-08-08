@@ -1,109 +1,212 @@
 /* You can add global styles to this file, and also import other style files */
-$full-height: 100vh;
 
+$full-height: 100vh;
 .full-screen-img {
-  width: 100vw;
-  height: $full-height;
-  position: absolute;
-  //   z-index: -3;
+    width: 100vw;
+    height: $full-height;
+    position: absolute;
+    //   z-index: -3;
 }
 
 .full-screen {
-  position: relative;
-  width: 100vw;
-  height: $full-height;
-
+    position: relative;
+    width: 100vw;
+    height: $full-height;
 }
 
 .div-f {
-  width: 100px;
-  height: $full-height;
-  position: absolute;
-  background-image: linear-gradient(transparent, transparent);
-  display: flex;
-
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: all .4s ease-out;
-
-  & span {
-    color: #ffffff87;
-    transition: all .2s ease-in
-  }
-
-  &:hover {
-    width: 200px;
-
-    & span {
-      color: #fff;
-      transform: scale(1.5);
-    }
-  }
-
-  &-left {
-    left: 0;
-
-    &:hover {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent);
-    }
-
-  }
-
-  &-right {
-    right: 0;
-
-    &:hover {
-      background-image: linear-gradient(to left, rgba(0, 0, 0, .5), transparent);
-    }
-  }
-
-
-  &-center {
     width: 100px;
-    height: 100px;
-    top: 50%;
-    right: 50%;
-    background-color: green;
-    transform: translate(50%, 20%);
-  }
-
+    height: $full-height;
+    position: absolute;
+    background-image: linear-gradient(transparent, transparent);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-out;
+    & span {
+        color: #ffffff87;
+        transition: all .2s ease-in
+    }
+    &:hover {
+        width: 200px;
+        & span {
+            color: #fff;
+            transform: scale(1.5);
+        }
+    }
+    &-left {
+        left: 0;
+        &:hover {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent);
+        }
+    }
+    &-right {
+        right: 0;
+        &:hover {
+            background-image: linear-gradient(to left, rgba(0, 0, 0, .5), transparent);
+        }
+    }
+    &-center {
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        right: 50%;
+        background-color: green;
+        transform: translate(50%, 20%);
+    }
 }
 
 .btn-container {
-  margin: .3rem;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, .5);
-  padding: .1rem 1rem;
-  border-radius: 50px;
+    margin: .3rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .5);
+    padding: .1rem 1rem;
+    border-radius: 50px;
 }
 
 .btn-wrapper {
-  padding: 1rem 0px;
+    padding: 1rem 2rem;
 }
 
 .card-wrapper {
-  height: 20rem;
-  width: 10rem;
+    height: 22rem;
+    width: 12rem;
+    position: relative;
+    background-color: #f9f9f9;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+    justify-self: flex-start;
 }
 
 .card-div {
-  height: 70%;
-  background-color: red;
+    height: 70%;
+    padding: .1rem;
+    border: .5px solid #c5c5c5;
+    & img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .title-div {
-  height: 15%;
-  padding: .3rem;
+    height: 15%;
+    padding: .3rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .rate-div {
-  height: 7%;
-  padding: .2rem;
+    height: 7%;
+    padding: .2rem;
+    position: absolute;
+    right: -10%;
+    bottom: 40%;
+    span {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: orangered;
+        text-align: center;
+        padding: .5rem;
+        color: #fff;
+        display: block;
+        font-size: 1.1rem;
+        transition: all .5s ease-out;
+        -webkit-transition: all .5s ease-out;
+        -moz-transition: all .5s ease-out;
+        -ms-transition: all .5s ease-out;
+        -o-transition: all .5s ease-out;
+        &:hover {
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+    }
 }
 
 .star-div {
-  padding: .2rem;
+    padding: .2rem;
+}
+
+.form-control.input-style {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    &+span {
+        display: flex;
+        background-color: #f3eaea;
+        /* width: 2rem; */
+        height: 95%;
+        position: absolute;
+        right: .1rem;
+        top: .1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        &:hover {
+            background-color: #cec7c7;
+        }
+    }
+}
+
+.thumb-wrapper {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #000;
+    // margin: 2rem auto;
+    width: 100%;
+}
+
+.footer {
+    height: 40vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 0 !important;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem 2rem;
+}
+
+.footer-copy {
+    height: 10vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    // background: #eee;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+.customForm input {
+    margin-bottom: 1rem;
 }
 
 // custom styles
