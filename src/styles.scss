@@ -70,4 +70,40 @@ $full-height: 100vh;
 
 }
 
+.btn-container {
+  margin: .3rem;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .5);
+  padding: .1rem 1rem;
+  border-radius: 50px;
+}
+
+.btn-wrapper {
+  padding: 1rem 0px;
+}
+
+.card-wrapper {
+  height: 20rem;
+  width: 10rem;
+}
+
+.card-div {
+  height: 70%;
+  background-color: red;
+}
+
+.title-div {
+  height: 15%;
+  padding: .3rem;
+}
+
+.rate-div {
+  height: 7%;
+  padding: .2rem;
+}
+
+.star-div {
+  padding: .2rem;
+}
+
 // custom styles
