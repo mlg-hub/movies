@@ -1,166 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 
-<head>
+<body lang="en">
+
+  <head>
     <meta charset="utf-8">
-    <title>Movies: Lux</title>
+    <title>TestIndex</title>
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-</head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
 
-<body style="padding: 0; overflow-x: hidden;background-color: #f9f9f9;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <body style="padding: 0; overflow-x: hidden;background-color: #f9f9f9;">
+    <app-root></app-root>
+  </body>
 
-        <div class="collapse navbar-collapse right" id="navbarColor01" style="justify-content: flex-end">
-            <ul class="navbar-nav mr-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: orangered!important">Login</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="full-screen">
-        <img class="full-screen-img" src="./assets/ibi-full-screen.jpg" />
-
-        <div class="div-f div-f-left">
-            <span style="
-      font-size: 3rem;display: block;
-   
-      ">&#10094;</span>
-        </div>
-        <div class="div-f div-f-right">
-            <span style="font-size: 3rem;display: block;">&#10095;</span>
-        </div>
-        <div class="div-center">
-            <span style="
-        background-color: red;
-        color: white;
-        width: 30px;
-         height: 30px;">&#155;</span>
-        </div>
-    </div>
-    </div>
-    <section class="container" style="padding: 1rem 1rem; display:flex; justify-content: center;">
-        <div class="form-group" style="width: 50%;position:relative">
-            <input class="form-control input-style" />
-            <span class="btn btn-success">Search</span>
-        </div>
-    </section>
-    <div class="btn-wrapper" style="display: flex; flex-wrap: wrap;">
-        <div class="btn btn-outline-primary" style="margin-right: 1rem;border-radius: 30px">Action</div>
-        <div class="btn btn-outline-primary" style="margin-right: 1rem;border-radius: 30px">Navigate</div>
-        <div class="btn btn-outline-primary" style="margin-right: 1rem;border-radius: 30px">Angular</div>
-    </div>
-
-    <section class="thumb-wrapper">
-        <div style="display: flex; flex-wrap: wrap;justify-content: space-evenly;">
-            <div class="card-wrapper">
-                <div class="card-div">
-                    <img src="./assets/thumb1.jfif" />
-                </div>
-                <div class="title-div">
-                    <span>Actions</span>
-                </div>
-                <div class="rate-div">
-                    <span>6.5</span>
-                </div>
-                <div class="star-div">
-                    *****
-                </div>
-            </div>
-            <div class="card-wrapper">
-                <div class="card-div">
-                    <img src="./assets/thumb1.jfif" />
-                </div>
-                <div class="title-div">
-                    <span>Actions</span>
-                </div>
-                <div class="rate-div">
-                    <span>6.5</span>
-                </div>
-                <div class="star-div">
-                    <span>&#9733;</span>
-                </div>
-            </div>
-            <div class="card-wrapper">
-                <div class="card-div">
-                    <img src="./assets/thumb1.jfif" />
-                </div>
-                <div class="title-div">
-                    <span>Actions</span>
-                </div>
-                <div class="rate-div">
-                    <span>6.5</span>
-                </div>
-                <div class="star-div">
-                    <span>&#9733;</span>
-                </div>
-            </div>
-            <div class="card-wrapper">
-                <div class="card-div">
-                    <img src="./assets/thumb1.jfif" />
-                </div>
-                <div class="title-div">
-                    <span>Actions</span>
-                </div>
-                <div class="rate-div">
-                    <span>6.5</span>
-                </div>
-                <div class="star-div">
-                    *****
-                </div>
-            </div>
-            <div class="card-wrapper">
-                <div class="card-div">
-                    <img src="./assets/thumb1.jfif" />
-                </div>
-                <div class="title-div">
-                    <span>Actions</span>
-                </div>
-                <div class="rate-div">
-                    <span>6.5</span>
-                </div>
-                <div class="star-div">
-                    *****
-                </div>
-            </div>
-        </div>
-        <div style="justify-self: end;align-self: flex-end;">
-            <button class="btn btn-success">See more</button>
-        </div>
-
-    </section>
-    <section class="footer">
-        <div class="leftblock">
-            <blockquote cite="google.com">
-                <p>MovieDBApp made with love by the Ibi team;<br /> a good way to show how awesome is angular.
-                </p>
-                <footer>—Mlg, <cite>Sofware developer</cite></footer>
-            </blockquote>
-        </div>
-        <div class="rightblock">
-            <blockquote cite="google.com">
-                <p>It was a nice expirience learning Angular with the Ibi team;
-                </p>
-                <footer>—Ronaldo, <cite>Juventus Player</cite></footer>
-            </blockquote>
-        </div>
-    </section>
-    <section class="footer-copy">
-        <p>Free for any good use <b>No CopyWrite</b></p>
-    </section>
-
-
-</body>
-
-</html>
+  </html>
