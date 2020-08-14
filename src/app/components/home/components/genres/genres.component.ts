@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IGenre, IResponseGenre } from 'src/utils/interfaces';
+import { ApiService } from 'src/services/api.service';
 
 @Component({
   selector: 'app-genres',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenresComponent implements OnInit {
 
-  constructor() { }
+  allGenres: IGenre[] = [];
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getGenres().subscribe(
+      (data: IResponseGenre) => {
+        this.allGenres = data.genres;
+      });
   }
 
 }

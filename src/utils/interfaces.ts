@@ -1,5 +1,5 @@
 
-interface IGenre {
+export interface IGenre {
     name: string;
     id: number;
 }
